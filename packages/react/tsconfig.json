@@ -1,0 +1,6 @@
+{
+  "extends": "@nix-ui/ts-config/react.json",
+  "include": [
+    "src"
+  ]
+}

@@ -1,0 +1,3 @@
+{
+  "extends": "@nix-ui/eslint-config"
+}
