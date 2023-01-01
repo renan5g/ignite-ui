@@ -1,4 +1,4 @@
-import { Box, Checkbox, CheckboxProps, Text } from '@ignite-ui/react'
+import { Box, Checkbox, CheckboxProps, Text } from '@nix-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
@@ -11,6 +11,7 @@ export default {
         <Box
           as="label"
           css={{
+            background: 'none',
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',

@@ -2,11 +2,11 @@ import { ComponentProps } from 'react'
 import { styled } from '../styles/styled'
 
 export const TextArea = styled('textarea', {
-  backgroundColor: '$gray900',
+  backgroundColor: '$neutral800',
   padding: '$3 $4',
   borderRadius: '$sm',
   boxSizing: 'border-box',
-  border: '$borderWidths$thick solid $gray900',
+  border: '$borderWidths$thick solid $neutral700',
 
   fontFamily: '$default',
   fontSize: '$sm',
@@ -17,7 +17,7 @@ export const TextArea = styled('textarea', {
 
   '&:focus': {
     outline: 0,
-    borderColor: '$ignite300',
+    borderColor: '$primary300',
   },
 
   '&:disabled': {
@@ -26,8 +26,10 @@ export const TextArea = styled('textarea', {
   },
 
   '&:placeholder': {
-    color: '$gray400',
+    color: '$gray300',
   },
 })
 
 export interface TextAreaProps extends ComponentProps<typeof TextArea> {}
+
+TextArea.displayName = 'TextArea'

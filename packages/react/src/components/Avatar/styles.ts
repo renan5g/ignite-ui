@@ -25,8 +25,8 @@ export const Fallback = styled(Avatar.Fallback, {
   alignItems: 'center',
   justifyContent: 'center',
 
-  backgroundColor: '$gray600',
-  color: '$gray800',
+  backgroundColor: '$neutral800',
+  color: '$gray100',
 
   svg: {
     width: '$6',

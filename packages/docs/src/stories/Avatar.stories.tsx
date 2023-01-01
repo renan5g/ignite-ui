@@ -1,4 +1,4 @@
-import { Avatar, AvatarProps } from '@ignite-ui/react'
+import { Avatar, AvatarProps } from '@nix-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/renan5g.png',
     alt: 'Renan Alves',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      }
+    }
+  }
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}

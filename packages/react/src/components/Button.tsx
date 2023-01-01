@@ -34,10 +34,10 @@ export const Button = styled('button', {
     variant: {
       primary: {
         color: '$white',
-        backgroundColor: '$ignite500',
+        backgroundColor: '$primary500',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '$ignite300',
+          backgroundColor: '$primary400',
         },
 
         '&:disabled': {
@@ -45,11 +45,11 @@ export const Button = styled('button', {
         },
       },
       secondary: {
-        color: '$ignite300',
-        border: '$borderWidths$thick solid $ignite500',
+        color: '$primary400',
+        border: '$borderWidths$thick solid $primary500',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '$ignite500',
+          backgroundColor: '$primary500',
           color: '$white',
         },
 
@@ -91,3 +91,5 @@ export const Button = styled('button', {
 export interface ButtonProps extends ComponentProps<typeof Button> {
   as?: ElementType
 }
+
+Button.displayName = 'Button'

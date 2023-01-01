@@ -1,4 +1,4 @@
-import { Box, Text, TextArea, TextAreaProps } from '@ignite-ui/react'
+import { Box, Text, TextArea, TextAreaProps } from '@nix-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
@@ -10,7 +10,7 @@ export default {
       return (
         <Box
           as="label"
-          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
+          css={{ display: 'flex', flexDirection: 'column', gap: '$2', background: 'none', }}
         >
           <Text size="sm">Observations</Text>
           {Story()}

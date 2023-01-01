@@ -10,7 +10,7 @@ import {
   radii,
   space,
   zIndices,
-} from '@ignite-ui/tokens'
+} from '@nix-ui/tokens'
 import type * as Stitches from '@stitches/react'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 

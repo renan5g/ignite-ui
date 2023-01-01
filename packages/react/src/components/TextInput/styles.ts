@@ -1,16 +1,16 @@
 import { styled } from '../../styles/styled'
 
 export const Container = styled('div', {
-  backgroundColor: '$gray900',
+  backgroundColor: '$neutral800',
   padding: '$3 $4',
   borderRadius: '$sm',
   boxSizing: 'border-box',
-  border: '$borderWidths$thick solid $gray900',
+  border: '$borderWidths$thick solid $neutral700',
   display: 'flex',
   alignItems: 'baseline',
 
   '&:has(input:focus)': {
-    borderColor: '$ignite300',
+    borderColor: '$primary300',
   },
 
   '&:has(input:disabled)': {
@@ -23,7 +23,20 @@ export const Prefix = styled('span', {
   fontFamily: '$default',
   fontSize: '$sm',
   fontWeight: '$regular',
-  color: '$gray400',
+  color: '$gray300',
+})
+
+export const ErrorMessage = styled('span', {
+  fontFamily: '$default',
+  fontSize: '$sm',
+  fontWeight: '$regular',
+  color: '$errorText',
+
+  svg: {
+    width: '$4',
+    height: '$4',
+    color: '$error',
+  },
 })
 
 export const Input = styled('input', {
@@ -44,6 +57,6 @@ export const Input = styled('input', {
   },
 
   '&:placeholder': {
-    color: '$gray400',
+    color: '$gray300',
   },
 })
